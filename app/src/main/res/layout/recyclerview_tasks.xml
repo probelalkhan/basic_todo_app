@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textViewDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Eggs"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDesc"
+        android:layout_marginTop="5dp"
+        android:text="Yesterday"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+    <TextView
+        android:id="@+id/textViewIsFinished"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_done" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textViewDate"
+        android:layout_marginTop="10dp"
+        android:background="#878787" />
+
+</RelativeLayout>

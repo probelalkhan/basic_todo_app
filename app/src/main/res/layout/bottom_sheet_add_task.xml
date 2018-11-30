@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:padding="4dp"
+            android:text="Today"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/buttonDate"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/ic_date" />
+
+        <ImageButton
+            android:id="@+id/buttonGallery"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_toRightOf="@id/buttonDate"
+            android:background="@drawable/ic_gallery" />
+
+        <ImageButton
+            android:id="@+id/buttonCamera"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_toRightOf="@id/buttonGallery"
+            android:background="@drawable/ic_camera" />
+
+        <ImageButton
+            android:id="@+id/buttonSave"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_send" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. buy eggs from market" />
+
+</LinearLayout>
